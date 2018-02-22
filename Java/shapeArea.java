@@ -11,7 +11,7 @@
 	
 	Example Solution : For n = 2, the output should be shapeArea(n) = 5;
 	For n = 3, the output should be shapeArea(n) = 13.
-	Constraints:  
+	Constraints:  1 ≤ n < 10 ^ 4
 
 	How to run: In console-> Java ShapeArea
 */
@@ -19,7 +19,7 @@
 public class ShapeArea{
 
 	public static int area(int n){
-	// After doing a for loop, I realized that the numbers 1 = 1, 2 = 5, 3 = 13 were 1 + (the sumation of 1....N-1)
+	// After doing a for loop, I realized that the numbers 1 = 1, 2 = 5, 3 = 13 were 1 + (the sumation of 1 + 2 ....N-1)
 	// and that it can be solved in one line as well as O(1) complexity 
 
 		return 1 + n*(n-1)/2 * 4;
